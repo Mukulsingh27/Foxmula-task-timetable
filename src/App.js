@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+
+import CardOne from "./Components/CardOne";
+import ProgressCard from "./Components/ProgressCard";
+import TimeTable from "./TimeTable";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ucard">
+    <Fragment>
+      <div className='content__wrapper d-grid'>
+        <CardOne />
+        <ProgressCard /> 
+        <TimeTable />
+      </div>
+  </Fragment>
     </div>
   );
 }
